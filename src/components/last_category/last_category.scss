@@ -1,0 +1,83 @@
+@import './../../scss/variable.scss';
+@import './../../scss/mixins.scss';
+
+.main{
+
+.container{
+        @include mq(1200) {
+            max-width: 1200px !important;                                             }
+    
+
+    .breadcrumb{
+        .breadcrumb-item{
+            font-size: 15px;
+            color: grey;
+            a{
+                color: grey;
+            }
+            &::before{
+                margin-left: 8px;
+            }
+
+            &:hover{
+                a{
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+
+
+}
+.whole__category{
+.main__search{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+width: 100%;
+
+
+
+
+.left__search__products{
+width: 81%;
+@include mq(900) {
+    width: 100%;                                           }
+.whole__left__search{
+    width: 100%;
+    display: flex;
+    direction: ltr;
+    flex-direction: column;
+    align-self: start;
+    justify-content: start;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+}
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+}

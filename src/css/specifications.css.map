@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,cAAc,CAAA;EACV,SAAS,EAAE,GAAG;EACd,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,KAAK;CAYpB;;AAfD,AAIA,cAJc,CAId,EAAE,CAAA;EACM,SAAS,EAAE,IAAI;CACtB;;AAND,AAOA,cAPc,CAOd,EAAE,CAAA;EACE,SAAS,EAAE,IAAI;CAElB;;AAVD,AAWA,cAXc,CAWd,MAAM,CAAA;EACF,KAAK,EAAE,GAAG;EACV,SAAS,EAAE,KAAK;CACnB",
+    "sources": [
+        "../components/product/Specifications/specifications.scss",
+        "../scss/variable.scss"
+    ],
+    "names": [],
+    "file": "specifications.css"
+}

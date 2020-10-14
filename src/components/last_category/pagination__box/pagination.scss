@@ -1,0 +1,43 @@
+@import './../../../scss/variable.scss';
+
+.last__box {
+    background-color: $lightgray;
+    width: 98%;
+    height: 53px;
+    border-radius: 10px;
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    justify-self: start;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: -10px;
+
+    .numbers {
+        display: flex;
+        direction: rtl;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        span {
+            margin-right: 10px;
+            margin-left: 2px;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 7px 14px;
+            background-color: white;
+            border-radius: 10px;
+            font-weight: 500;
+
+            &:hover {
+
+
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+            }
+
+
+        }
+    }
+
+}

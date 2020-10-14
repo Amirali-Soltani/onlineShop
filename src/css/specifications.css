@@ -1,0 +1,19 @@
+.main__content {
+  direction: rtl;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.main__content th {
+  font-size: 17px;
+}
+
+.main__content td {
+  font-size: 17px;
+}
+
+.main__content .title {
+  width: 25%;
+  min-width: 143px;
+}
+/*# sourceMappingURL=specifications.css.map */

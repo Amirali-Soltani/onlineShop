@@ -1,0 +1,165 @@
+@import './../../../scss/variable.scss';
+@import './../../../scss/mixins.scss';
+
+
+.main__header {
+    width: 100%;
+    display: flex;
+    height: 380px;
+    @include mq(769) {
+flex-direction: column; 
+height: auto;               }
+
+    .header__right__slider {
+        width: 67%;
+        margin-left: 20px;
+        @include mq(997) {
+            width: 60%;
+                  }
+        @include mq(769) {
+            width: 100%;
+            margin-left: 0px;
+
+                    }
+
+        img {
+            border-radius: 4px;
+            width: 100%;
+            height: 380px;
+        }
+
+        .slick-dots {
+            position: relative;
+
+            li {
+                button {
+                    &::before {
+                        font-size: 13px;
+                        color: grey;
+                        position: absolute;
+                        top: -61px;
+                        left: 0;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .header__left__images {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        @include mq(997) {
+        align-items: start;
+        width: 36%;
+                  }
+
+                  @include mq(769) {
+                      flex-direction: row;
+                      width: 100%;
+                      justify-content: space-around;
+                              }
+    }
+
+        .top__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+
+            .main__pic {
+                width: 332px;
+                height: 185px;
+                border-radius: 4px;
+                @include mq(997) {
+                    // width: 25vw;
+                    width: 100%;
+    height: 25vw;
+                          }
+                          @include mq(769) {
+                            // width: 33vw;
+                            width: calc(100% - 5%);
+
+                            height: 31vw;
+                                  }
+            }
+
+            .effect {
+                position: absolute;
+                height: 314px;
+                width: 30px;
+                top: -102px;
+                left: -90px;
+                transform: rotate(25deg);
+                background-color: $white;
+                opacity: 0.3;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+            }
+
+            &:hover {
+                .effect {
+
+                    top: -36px;
+                    left: 383px;
+
+                }
+            }
+        }
+
+        .buttom__image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 332px;
+                height: 185px;
+                border-radius: 4px;
+                @include mq(997) {
+                    width: 100%;
+                    height: 25vw;
+                          }
+                          @include mq(769) {
+                            // width: 33vw;
+                            width: calc(100% - 5%);
+    height: 31vw;
+                                  }
+            }
+
+            .effect {
+                position: absolute;
+                height: 314px;
+                width: 30px;
+                top: -102px;
+                left: -90px;
+                transform: rotate(25deg);
+                background-color: $white;
+                opacity: 0.3;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+            }
+
+            &:hover {
+                .effect {
+
+                    top: -36px;
+                    left: 383px;
+
+                }
+            }
+        }
+    }
+

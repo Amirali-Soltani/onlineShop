@@ -1,0 +1,53 @@
+@import './../../../../../scss/variable.scss';
+@import './../../../../../scss/mixins.scss';
+
+
+.login {
+    .btn {
+        background-color: #ffeaa7;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+position: relative;
+margin-left: 20px;
+align-items: center;
+@include mq(770) {
+    margin-right: 20px !important;
+    justify-content: start !important;
+    padding: 5px 10px;
+
+  }
+&:hover{
+border: 1px solid #ffeaa7;
+background-color: transparent;
+
+.login__1{
+top: -20px;
+}
+.login__2{
+bottom: 8px;
+color: #000;
+}
+}
+.login__1{
+position: absolute;
+top: 6px;
+transition: all 0.3s;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-ms-transition: all 0.3s;
+-o-transition: all 0.3s;
+}
+.login__2{
+position: absolute;
+bottom: -30px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+-o-transition: all 0.5s;
+}
+.login__hidden{
+visibility:hidden;        }
+    }
+}

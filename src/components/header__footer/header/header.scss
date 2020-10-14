@@ -1,0 +1,349 @@
+@import './../../../scss/variable.scss';
+@import './../../../scss/mixins.scss';
+
+
+@keyframes trash__animate {
+    0% {
+transform: rotate(45deg);
+    }
+  
+    25% {
+        transform: rotate(0deg);
+
+    }
+  
+    50% {
+        transform: rotate(-45deg);
+
+    }
+  
+    75% {
+        transform: rotate(0deg);
+
+    }
+  
+    100% {
+        transform: rotate(45deg);
+
+    }
+  }
+
+
+.container {
+    direction: rtl;
+    font-family: $main-font;
+    @include mq(680) {
+        overflow-x: hidden;
+      }
+      @include mq(500) {
+ padding-right: 8px !important;
+ padding-left: 8px !important;
+
+              }
+
+}
+
+header {
+    background-color: $orange;
+
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        @include mq(768) {
+            justify-content: space-around;
+          }
+          @include mq(500) {
+            justify-content: space-between;
+          }
+
+        .header__right {
+            display: flex;
+            align-items: center;
+
+            .logo {
+               
+                a {
+                    width: 80px;
+                    display: inline-block;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        @include mq(450) {
+                            height: 85%;
+                        width: 85%;
+                                  }
+
+                    }
+                }
+            }
+
+
+
+ 
+        }
+    }
+
+    .header__left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // width: 270px;
+
+
+}
+
+}
+.register__modal{
+    div{
+        direction: rtl;
+    }
+.modal-content{
+position: absolute !important;
+top: 63px;
+
+.register{
+    .modal-header{
+        background-color:$orange !important;
+        .modal-title{
+            font-size: 22px !important;
+            margin-right: 16px;
+
+        }
+        .close{
+            color:$lemon !important;
+            position: absolute;
+            left: 5px;
+            font-size: 34px;
+
+        
+        }
+    }
+    .modal-body{
+        .form-row{
+            margin-bottom: 20px;
+        }
+.form-group{
+
+}
+.form-check{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    .form-check-input{
+        top: 4px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        top: -5px;
+        right: 10px;
+        cursor: pointer;
+        zoom: 1.5;
+    }
+
+    .form-check-label{
+        font-size: 14px !important;
+        margin-right: 48px;
+    }
+}
+
+
+    
+}
+    .modal-footer{
+        background-color: $lightgreen;
+        .btn-secondary{
+            background-color: $lemon !important;
+            color: $black;
+            border: 0px;
+        }
+        .btn-primary{
+            background-color:$orange;
+            border: 0px;
+            width: 200px;
+
+        }
+    }
+}
+.success__register{
+
+    .modal-header{
+        background-color:$orange !important;
+        .modal-title{
+            font-size: 22px !important;
+            margin-right: 16px;
+
+        }
+        .close{
+            color:$lemon !important;
+            position: absolute;
+            left: 5px;
+            font-size: 34px;
+
+        
+        }
+    }
+    .modal-body{
+div{
+font-size: 24px;
+}
+.name{
+text-align: right;
+
+}
+.welcom{
+text-align: center;
+
+}
+
+
+    
+}
+    .modal-footer{
+        background-color: $lightgreen;
+        .btn-secondary{
+            background-color: $lemon !important;
+            color: $black;
+            border: 0px;
+        }
+        .btn-primary{
+            background-color:$orange;
+            border: 0px;
+            width: 200px;
+
+        }
+    }
+}///success__login
+
+}
+}
+
+
+
+
+
+
+
+.login__modal{
+    div{
+        direction: rtl;
+    }
+    .modal-content{
+    position: absolute !important;
+    top: 63px;
+    
+    .login{
+    .modal-header{
+            background-color:$orange !important;
+            .modal-title{
+                font-size: 22px !important;
+                margin-right: 16px;
+    
+            }
+            .close{
+                color:$lemon !important;
+                position: absolute;
+                left: 5px;
+                font-size: 34px;
+    
+            
+            }
+        }
+        .modal-body{
+            .form-row{
+                margin-bottom: 20px;
+            }
+    .form-group{
+    
+    }
+    .form-check{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        .form-check-input{
+            top: 4px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            top: -5px;
+            right: 10px;
+            cursor: pointer;
+            zoom: 1.5;
+        }
+
+        .form-check-label{
+            font-size: 14px !important;
+            margin-right: 48px;
+        }
+    }
+    
+    
+        
+    }
+        .modal-footer{
+            background-color: $lightgreen;
+            .btn-secondary{
+                background-color: $lemon !important;
+                color: $black;
+                border: 0px;
+            }
+            .btn-primary{
+                background-color:$orange;
+                border: 0px;
+                width: 200px;
+    
+            }
+        }
+    }///login
+    .success__login{
+
+        .modal-header{
+            background-color:$orange !important;
+            .modal-title{
+                font-size: 22px !important;
+                margin-right: 16px;
+    
+            }
+            .close{
+                color:$lemon !important;
+                position: absolute;
+                left: 5px;
+                font-size: 34px;
+    
+            
+            }
+        }
+        .modal-body{
+div{
+    font-size: 24px;
+}
+.name{
+    text-align: right;
+
+}
+.welcom{
+    text-align: center;
+
+}
+
+    
+        
+    }
+        .modal-footer{
+            background-color: $lightgreen;
+            .btn-secondary{
+                background-color: $lemon !important;
+                color: $black;
+                border: 0px;
+            }
+            .btn-primary{
+                background-color:$orange;
+                border: 0px;
+                width: 200px;
+    
+            }
+        }
+    }///success__login
+}
+    }

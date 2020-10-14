@@ -1,0 +1,246 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./../fonts/eot/IRANSansWeb_Medium.eot");
+  src: url("./../fonts/eot/IRANSansWeb_Medium.eot?#iefix") format("embedded-opentype"), url("./../fonts/woff2/IRANSansWeb_Medium.woff2") format("woff2"), url("./../fonts/woff/IRANSansWeb_Medium.woff") format("woff"), url("./../fonts/ttf/IRANSansWeb_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./../fonts/eot/IRANSansWeb_Light.eot");
+  src: url("./../fonts/eot/IRANSansWeb_Light.eot?#iefix") format("embedded-opentype"), url("./../fonts/woff2/IRANSansWeb_Light.woff2") format("woff2"), url("./../fonts/woff/IRANSansWeb_Light.woff") format("woff"), url("./../fonts/ttf/IRANSansWeb_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./../fonts/eot/IRANSansWeb_UltraLight.eot");
+  src: url("./../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix") format("embedded-opentype"), url("./../fonts/woff2/IRANSansWeb_UltraLight.woff2") format("woff2"), url("./../fonts/woff/IRANSansWeb_UltraLight.woff") format("woff"), url("./../fonts/ttf/IRANSansWeb_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/eot/IRANSansWeb.eot");
+  src: url("./../fonts/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("./../fonts/woff2/IRANSansWeb.woff2") format("woff2"), url("./../fonts/woff/IRANSansWeb.woff") format("woff"), url("./../fonts/ttf/IRANSansWeb.ttf") format("truetype");
+}
+
+h4 {
+  text-align: center;
+  font-family: IRANSans;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* #region Reset*/
+ul {
+  list-style: none;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.block {
+  display: block !important;
+}
+
+.none {
+  display: none !important;
+}
+
+.bg-lightgrey {
+  background-color: #ecf0f1 !important;
+}
+
+.bg-lightblue2 {
+  background-color: #7ed6df;
+}
+
+.bg-red {
+  background-color: red !important;
+}
+
+.bg-black {
+  background-color: black !important;
+}
+
+.bg-gray {
+  background-color: gray !important;
+}
+
+.bg-cream {
+  background-color: #fab1a0;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-orange {
+  background-color: #ff7675 !important;
+}
+
+.bg-lightgreen {
+  background-color: #81ecec !important;
+}
+
+.bg-green {
+  background-color: #55efc4 !important;
+}
+
+.bg-green300 {
+  background-color: #55efc4 !important;
+}
+
+.bg-lemon {
+  background-color: #fab1a0 !important;
+}
+
+.bg-blue {
+  background-color: #74b9ff !important;
+}
+
+.c-white {
+  color: #fff !important;
+}
+
+.opacity-seven {
+  opacity: 0.7 !important;
+}
+
+div {
+  font-size: 13px;
+  font-weight: normal;
+  font-family: IRANSans;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: #74b9ff;
+}
+
+.orange {
+  background-color: #ff7675;
+}
+
+.white {
+  background-color: white;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.red {
+  background-color: #f53b57;
+}
+
+.black {
+  background-color: #2d3436;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.brown {
+  background-color: #dabb9f;
+}
+
+.cream {
+  background-color: #fab1a0;
+}
+
+.green {
+  background-color: #55efc4;
+}
+
+.lightblue {
+  background-color: #81ecec;
+}
+
+/* #endregion Reset*/
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=app.css.map */

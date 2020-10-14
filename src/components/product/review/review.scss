@@ -1,0 +1,56 @@
+@import './../../../scss/variable.scss';
+
+.main__review{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 100px;
+.main__titile{
+    font-size: 27px;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 22px;
+    margin-right: 26px;
+    margin-bottom: 12px;
+
+}
+.review{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 26px;
+    margin-bottom: 12px;
+    color: grey;
+}
+img{
+    width: 856px;
+    height: 400px;
+    align-self: center;
+    max-width: 100%;
+
+    
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 22px;
+    margin-right: 26px;
+    margin-bottom: 8px;
+}
+.image__container{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+
+    img{
+        width: 460px;
+        height: 460px;
+        max-width: 100%;
+    }
+}
+}

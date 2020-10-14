@@ -1,0 +1,107 @@
+@import './../../../scss/variable.scss';
+@import './../../../scss/mixins.scss';
+
+
+
+@keyframes icon__animate2 {
+    0% {
+        transform: translate(0px, 0);
+    }
+
+    15% {
+        transform: translate(20px, 0);
+
+    }
+
+    30% {
+        transform: translate(-20px, 0);
+
+    }
+
+    45% {
+        transform: translate(20px, 0);
+
+    }
+
+    60% {
+        transform: translate(-20px, 0);
+
+    }
+
+    75% {
+        transform: translate(20px, 0);
+
+    }
+
+    90% {
+        transform: translate(-20px, 0);
+
+    }
+
+    100% {
+        transform: translate(0px, 0);
+
+    }
+
+}
+
+
+
+.parallex__background__image {
+    margin-top: 10px;
+    background-image: url('./../assets/banners/parallex-7.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    direction: ltr;
+    @include mq(769) {
+        height: 200px;
+    }
+}
+
+    .text__in__parallex {
+        width: 55%;
+        display: flex;
+        direction: rtl;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .top__text {
+            color: #fff;
+            font-size: 27px;
+            width: auto;
+            text-align: right;
+            font-weight: bold;
+            margin-left: 25px;
+            @include mq(769) {
+                font-size: 3vw;
+                      }
+        }
+
+        .buttom__text {
+            color: #fff;
+            font-size: 22px;
+            width: auto;
+            background-color: #ff7675;
+            border-radius: 4px;
+            padding: 7px;
+            margin-top: 42px;
+            border: 3px solid grey;
+            @include mq(769) {
+                font-size: 3vw;
+                margin-top: 20px;
+
+                      }
+
+            &:hover {
+                animation: icon__animate2 1s;
+                -webkit-animation: icon__animate2 1s;
+            }
+        }
+    }

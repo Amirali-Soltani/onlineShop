@@ -1,0 +1,88 @@
+.second__box {
+  background-color: #e9ecef;
+  width: 98%;
+  height: 51px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: rtl;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.second__box .sort__icon {
+  margin-right: 10px;
+}
+
+.second__box .sort__icon img {
+  width: 35px;
+  height: 35px;
+  margin-left: 7px;
+}
+
+@media only screen and (max-width: 550px) {
+  .second__box .sort__icon img {
+    display: none;
+  }
+}
+
+.second__box .sort__icon span {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .second__box .sort__icon span {
+    display: none;
+  }
+}
+
+.second__box .sort__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: rtl;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: start;
+}
+
+@media only screen and (max-width: 686px) {
+  .second__box .sort__name .number5 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 474px) {
+  .second__box .sort__name .number3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .second__box .sort__name .number2 {
+    display: none;
+  }
+}
+
+.second__box .sort__name span {
+  margin-right: 10px;
+  margin-left: 2px;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.second__box .sort__name span:hover {
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=top__second__box.css.map */

@@ -1,0 +1,131 @@
+.first__box {
+  background-color: #e9ecef;
+  width: 98%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: rtl;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 55px;
+}
+
+.first__box .number__of__product span {
+  font-size: 14px;
+}
+
+.first__box .number__of__product .number {
+  color: #ff7675;
+  font-weight: bold;
+  margin-right: 12px;
+  margin-left: 6px;
+}
+
+.first__box .advanced__search {
+  display: none;
+  background-color: #ff7675;
+  color: white;
+  padding: 7px;
+  border-radius: 4px;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .first__box .advanced__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.first__box .one__top__filter {
+  font-size: 15px;
+  margin-right: 0px;
+  position: relative;
+  padding: 10px 15px 10px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first__box .one__top__filter .separator {
+  height: 35px;
+  width: 2px;
+  background-color: gray;
+  margin-left: 36px;
+}
+
+.first__box .one__top__filter .name__of__filter {
+  font-size: 14px;
+  position: relative;
+}
+
+.first__box .one__top__filter .name__of__filter::before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 4px;
+  background-color: gray;
+  position: absolute;
+  right: -18px;
+  top: 3px;
+  background-color: #ff7675;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+
+.first__box .one__top__filter .name__of__filter::after {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 4px;
+  background-color: gray;
+  position: absolute;
+  right: -18px;
+  top: 3px;
+  background-color: #ff7675;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+
+.first__box .one__top__filter:hover {
+  color: #ff7675;
+}
+
+.first__box .one__top__filter:hover .name__of__filter::before {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-color: #ff7675;
+}
+
+.first__box .one__top__filter:hover .name__of__filter::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #ff7675;
+}
+/*# sourceMappingURL=top__first__box.css.map */

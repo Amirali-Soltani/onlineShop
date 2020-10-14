@@ -1,0 +1,109 @@
+@import './../../scss/variable.scss';
+@import './../../scss/mixins.scss';
+
+
+.slide__and__menu{
+display: flex;
+width: 100%;
+justify-content: space-between;
+.right__menu{
+    width: 28%;
+    .title{
+        background-color: #e9ecef;
+        height: 40px;
+        width: 100%;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .partOne{
+            @include mq(994) {
+                display: none;
+                                                   }
+        }
+    }
+.content__menu{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10px;
+    flex-direction: column;
+    .one{
+        background-color: #e9ecef;
+
+
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: start;
+width: 100%;
+margin-bottom: 10px;
+   
+    img{
+        width: 45px;
+        height: 45px;
+        margin-left: 30px;
+        @include mq(894) {
+            display: none;
+                                               }
+    }
+    }
+    .title__content{
+        font-size: 18px;
+        @include mq(894) {
+            display: flex;
+        align-items: center;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+                                               }
+
+    }
+}
+}
+
+}
+
+.left__slide{
+    width: 70%;
+    .pic1{
+        width:100% ;
+        height: 373px;
+    }
+    .pic2{
+        margin-top: 10px;
+    width: 100%;
+    height: 176px;
+}
+    }
+
+.three__images2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px 0;
+    .one{
+        @include mq(576) {
+            display: none !important;
+                                               }
+    }
+    .two{
+        @include mq(576) {
+width: 47% !important;
+                                               }
+    }
+    .three{
+        @include mq(576) {
+            width: 47% !important;
+
+                                               }
+    }
+    img{
+        width: 31%;
+        height: 230px;
+        cursor: pointer;
+    }
+}
+
+

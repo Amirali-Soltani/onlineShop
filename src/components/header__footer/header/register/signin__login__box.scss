@@ -1,0 +1,31 @@
+@import "./../../../../scss/mixins.scss";
+
+
+.regular{
+    @include mq(770) {
+        display: none !important;
+        
+              }
+}
+.signin__login__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+ 
+
+
+
+
+.success__login__register{
+    margin-left: 20px;
+    @include mq(770) {
+margin-right: 15px;
+              }
+    a{
+        text-align: right;
+    }
+}
+
+
+    }

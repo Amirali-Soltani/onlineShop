@@ -1,0 +1,320 @@
+.basket {
+  position: relative;
+}
+
+.basket:hover .dropdown__basket {
+  transform: perspective(400) rotate3d(1, 0, 0, 0);
+  -webkit-transform: perspective(400) rotate3d(1, 0, 0, 0);
+  -moz-transform: perspective(400) rotate3d(1, 0, 0, 0);
+  -ms-transform: perspective(400) rotate3d(1, 0, 0, 0);
+  -o-transform: perspective(400) rotate3d(1, 0, 0, 0);
+}
+
+.basket:hover .basket__image .image__1 {
+  right: 0px;
+  top: -65px;
+}
+
+.basket:hover .basket__image .image__2 {
+  right: 0px;
+  top: 7px;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 450px) {
+  .basket:hover .basket__image .image__2 {
+    right: 13px;
+    top: 16px;
+  }
+}
+
+.basket .basket__image {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.basket .basket__image img {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.05, 0.25, 0.38, 0.61);
+  -webkit-transition: all 0.5s cubic-bezier(0.05, 0.25, 0.38, 0.61);
+  -moz-transition: all 0.5s cubic-bezier(0.05, 0.25, 0.38, 0.61);
+  -ms-transition: all 0.5s cubic-bezier(0.05, 0.25, 0.38, 0.61);
+  -o-transition: all 0.5s cubic-bezier(0.05, 0.25, 0.38, 0.61);
+}
+
+.basket .basket__image .image__1 {
+  right: 0px;
+  top: 7px;
+}
+
+.basket .basket__image .image__2 {
+  right: 0px;
+  top: 74px;
+}
+
+.basket .shop__item {
+  position: absolute;
+  background-color: #EAFF0C;
+  padding: 5px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  font-weight: 500;
+  left: 8px;
+  top: 46px;
+}
+
+.basket .dropdown__basket {
+  position: absolute;
+  z-index: 10;
+  left: -124px;
+  background-color: #fff;
+  width: 240px;
+  height: auto;
+  -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+  -moz-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+  -ms-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+  -o-transform: perspective(400) rotate3d(1, 0, 0, -90deg);
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+@media only screen and (max-width: 1370px) {
+  .basket .dropdown__basket {
+    left: -18px;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .basket .dropdown__basket {
+    display: none;
+  }
+}
+
+.basket .dropdown__basket .without__product {
+  text-align: center;
+  font-size: 16px;
+  padding: 8px;
+  color: gray;
+}
+
+.basket .dropdown__basket .dropdown__basket__main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7px 9px;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffeaa7;
+  height: 30px;
+  text-align: center;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__header .number__of__commodity {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__body {
+  padding-top: 5px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__body .dropdown__basket__body__right {
+  width: 50%;
+  height: 119px;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__body .dropdown__basket__body__right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__body .dropdown__basket__body__left {
+  width: 50%;
+  padding: 8px;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__body .dropdown__basket__body__left span {
+  text-align: right;
+  display: block;
+  font-weight: 500;
+  font-size: 13.5px;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__body .dropdown__basket__body__left .dropdown__basket__body__left__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__body .dropdown__basket__body__left .dropdown__basket__body__left__info:hover .trash__button img {
+  animation: trash__animate 2s infinite;
+  -webkit-animation: trash__animate 2s infinite;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__body .dropdown__basket__body__left .dropdown__basket__body__left__info .trash__button img {
+  width: 27px;
+  height: 27px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__footer {
+  padding: 3px;
+  width: 100%;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__footer .dropdown__basket__footer__top {
+  background-color: #ff7675;
+  height: 33px;
+  border-radius: 1%;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__footer__bottom {
+  width: 100%;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__footer__bottom .success__button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #00b894;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3%;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__footer__bottom .success__button img {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__footer__bottom .seeMore__button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  margin-top: 10px;
+  color: black;
+  background-color: #81ecec;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.basket .dropdown__basket .dropdown__basket__main .dropdown__basket__footer__bottom .seeMore__button img {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=basket.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../components/header__footer/header/register/signin__box.scss"
+    ],
+    "names": [],
+    "file": "signin__box.css"
+}
